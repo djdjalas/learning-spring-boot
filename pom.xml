@@ -22,6 +22,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<rest.easy.client.version>3.1.4.Final</rest.easy.client.version>
+		<paypal.rest.easy.version>2.3.3-RELEASE</paypal.rest.easy.version>
 	</properties>
 
 	<dependencies>
@@ -29,6 +31,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jersey</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -39,6 +42,20 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>com.paypal.springboot</groupId>
+			<artifactId>resteasy-spring-boot-starter</artifactId>
+			<version>${paypal.rest.easy.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-client</artifactId>
+			<version>${rest.easy.client.version}</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
